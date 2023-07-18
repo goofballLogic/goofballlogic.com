@@ -38,6 +38,7 @@ body {
 
 p {
     padding: 2rem;
-    background-color: var(--white);
-    color: var(--space-cadet);
+    background-color: var(--black);
+    color: var(--chefchaouen-blue);
+    border-radius: 2px;
 }
