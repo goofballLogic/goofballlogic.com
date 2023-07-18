@@ -18,5 +18,8 @@ html, body {
     font-size: 3rem;
     width: 5rem;
     height: 5rem;
-    display: flex;
+    line-height: 5rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    text-shadow: var(--white) 2px;
 }
