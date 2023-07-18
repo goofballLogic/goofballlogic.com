@@ -26,13 +26,18 @@ body {
 
 
 .logo {
-    background-color: var(--chefchaouen-blue);
-    color: var(--sinopia);
+    background-color: var(--sinopia);
+    color: var(--space-cadet);
     font-size: 3rem;
     width: 5rem;
     height: 5rem;
     line-height: 5rem;
     text-align: center;
     border-radius: 0.5rem;
-    text-shadow: var(--white) 0 0 10px;
+}
+
+p {
+    padding: 2rem;
+    background-color: var(--white);
+    color: var(--space-cadet);
 }
