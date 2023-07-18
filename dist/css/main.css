@@ -1,0 +1,22 @@
+html, body {
+
+    --chefchaouen-blue: #4392f1ff;
+    --sinopia: #ba5a31ff;
+    --black: #000505ff;
+    --space-cadet: #3b3355ff;
+    --white: #fefcfdff;
+    
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 10pt;
+
+}
+
+.logo {
+    background-color: var(--chefchaouen-blue);
+    color: var(--sinopia);
+    font-size: 3rem;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+}
