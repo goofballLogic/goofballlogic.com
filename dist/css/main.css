@@ -25,20 +25,14 @@ body {
 }
 
 h1, h2, h3, h4 {
+
     font-weight: normal;
+
 }
+
 .logo {
 
     width: 10rem;
     height: 10rem;
-
-}
-
-p {
-
-    padding: 2rem;
-    background-color: var(--black);
-    color: var(--chefchaouen-blue);
-    border-radius: 2px;
 
 }
