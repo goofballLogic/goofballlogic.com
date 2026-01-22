@@ -5,7 +5,7 @@ html, body {
     --black: #000505ff;
     --space-cadet: #3b3355ff;
     --white: #fefcfdff;
-    
+
     background-color: var(--space-cadet);
     color: var(--white);
     font-size: 10pt;
@@ -24,31 +24,21 @@ body {
 
 }
 
-aside.pill {
-
-    display: flex;
-
+h1, h2, h3, h4 {
+    font-weight: normal;
 }
-
-aside.pill * + * {
-    margin-left: -0.5rem;
-}
-
 .logo {
-    background-color: var(--sinopia);
-    color: var(--space-cadet);
-    font-size: 3rem;
-    width: 5rem;
-    height: 5rem;
-    line-height: 5rem;
-    text-align: center;
-    border-radius: 0.5rem;
-    z-index: 10;
+
+    width: 10rem;
+    height: 10rem;
+
 }
 
 p {
+
     padding: 2rem;
     background-color: var(--black);
     color: var(--chefchaouen-blue);
     border-radius: 2px;
+
 }
