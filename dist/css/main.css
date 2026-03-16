@@ -16,12 +16,22 @@ html, body {
 
 }
 
+@media screen and (min-width: 100rem) {
+
+    body {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+
+    }
+
+}
+
 body {
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
+
     padding: 3rem;
     margin: 0;
 
@@ -37,5 +47,75 @@ h1, h2, h3, h4 {
 
     width: 10rem;
     height: 10rem;
+
+}
+
+
+.oot {
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    line-height: 2.5;
+    width: 100%;
+    margin: 3rem 0;
+    .topper::before {
+        display: block;
+        content: " ";
+        height: 0.5rem;
+        border: dashed 1px var(--white);
+        border-bottom: none;
+        margin: 0 -1rem;
+    }
+    .ender::after {
+        display: block;
+        content: " ";
+        height: 0.5rem;
+        border: dashed 1px var(--white);
+        border-top: none;
+        margin: 0 -1rem;
+    }
+}
+
+@media screen and (min-width: 100rem) {
+    .oot {
+        width: 20rem;
+        position: fixed;
+        height: 20rem;
+        top: 0;
+        right: 0;
+        margin: 3rem;
+    }
+}
+
+
+a {
+    color: var(--white);
+}
+
+.oot-scrolled {
+    --height: 10rem;
+    text-align: justify;
+    height: var(--height);
+    overflow: hidden;
+}
+
+@media screen and (min-width: 100rem) {
+    .oot-scrolled {
+        --height: 20rem;
+    }
+}
+
+.scrolling-content {
+  animation: scroll 60s linear infinite;
+}
+
+@keyframes scroll {
+  from { transform: translateY(var(--height)); }
+  to   { transform: translateY(-100%); }
+}
+
+
+ol {
+
+    padding-left: 2rem;
 
 }
