@@ -1,3 +1,7 @@
+@view-transition {
+  navigation: auto;
+}
+
 html, body {
 
     --chefchaouen-blue: #4392f1ff;
@@ -5,6 +9,7 @@ html, body {
     --black: #000505ff;
     --space-cadet: #3b3355ff;
     --white: #fefcfdff;
+    --screen: #fefcfd11;
 
     background-color: var(--space-cadet);
     color: var(--white);
@@ -16,7 +21,7 @@ html, body {
 
 }
 
-@media screen and (min-width: 100rem) {
+@media screen and (min-width: 80rem) {
 
     body {
 
@@ -31,15 +36,17 @@ html, body {
 
 body {
 
-
     padding: 3rem;
     margin: 0;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    letter-spacing: 0.07rem;
 
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, body {
 
-    font-weight: normal;
+    font-weight: lighter;
 
 }
 
@@ -50,72 +57,33 @@ h1, h2, h3, h4 {
 
 }
 
-
-.oot {
-    font-size: 1.1rem;
-    box-sizing: border-box;
-    line-height: 2.5;
-    width: 100%;
-    margin: 3rem 0;
-    .topper::before {
-        display: block;
-        content: " ";
-        height: 0.5rem;
-        border: dashed 1px var(--white);
-        border-bottom: none;
-        margin: 0 -1rem;
-    }
-    .ender::after {
-        display: block;
-        content: " ";
-        height: 0.5rem;
-        border: dashed 1px var(--white);
-        border-top: none;
-        margin: 0 -1rem;
-    }
-}
-
-@media screen and (min-width: 100rem) {
-    .oot {
-        width: 20rem;
-        position: fixed;
-        height: 20rem;
-        top: 0;
-        right: 0;
-        margin: 3rem;
-    }
-}
-
-
 a {
     color: var(--white);
 }
 
-.oot-scrolled {
-    --height: 10rem;
-    text-align: justify;
-    height: var(--height);
-    overflow: hidden;
+aside {
+    padding: 2rem;
+    background-color: var(--screen);
 }
 
-@media screen and (min-width: 100rem) {
-    .oot-scrolled {
-        --height: 20rem;
-    }
+li {
+    margin-bottom: 1rem;
 }
 
-.scrolling-content {
-  animation: scroll 60s linear infinite;
+p {
+    margin-top: 0;
 }
 
-@keyframes scroll {
-  from { transform: translateY(var(--height)); }
-  to   { transform: translateY(-100%); }
+p, li {
+    max-width: 40rem;
 }
 
+body > nav {
 
-ol {
-
-    padding-left: 2rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 2rem;
+    background-color: var(--screen);
 
 }
