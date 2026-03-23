@@ -21,32 +21,33 @@ html, body {
 
 }
 
+body {
+
+    padding: 1rem;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 1.2rem;
+
+}
+
 @media screen and (min-width: 80rem) {
 
     body {
 
+        padding: 3rem;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 3rem;
+        letter-spacing: 0.07rem;
 
     }
 
 }
 
-body {
-
-    padding: 3rem;
-    margin: 0;
-    line-height: 1.5;
-    font-size: 1.2rem;
-    letter-spacing: 0.07rem;
-
-}
-
 h1, h2, h3, h4, body {
 
-    font-weight: lighter;
+    font-weight: 300;
 
 }
 
@@ -80,10 +81,20 @@ p, li {
 
 body > nav {
 
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    padding: 2rem;
+    padding: 1rem;
     background-color: var(--screen);
 
+}
+
+@media screen and (min-width: 80rem) {
+
+    body > nav {
+
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 2rem;
+        background-color: var(--screen);
+
+    }
 }
