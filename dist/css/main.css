@@ -40,15 +40,13 @@ body {
 
     body {
 
-        display: initial;
         margin: 0;
         padding: 3rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 3rem;
         letter-spacing: 0.07rem;
-
+  
+        align-items: center;
+        gap: 3rem;
+        
     }
 
 }
@@ -84,7 +82,7 @@ p {
 }
 
 p, li {
-    max-width: 40rem;
+    max-width: 38rem;
 }
 
 body > nav {
