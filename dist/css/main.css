@@ -8,10 +8,11 @@ html, body {
     --sinopia: #ba5a31ff;
     --black: #000505ff;
     --space-cadet: #3b3355ff;
+    --space-cadet-dark: #2c2640ff;
     --white: #fefcfdff;
     --screen: #fefcfd11;
 
-    background-color: var(--space-cadet);
+    background-color: var(--space-cadet-dark);
     color: var(--white);
     font-size: 10pt;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
